@@ -3,13 +3,23 @@ import { html, css, LitElement } from 'lit'
 export class CardButton extends LitElement {
   static styles = css`
     button {
+      position: absolute;
+      right: 1rem;
+      bottom: 0;
       display: inline-block;
       margin: 1rem 0;
       padding: 0.5rem;
-      /* width: 100%; */
-      background-color: blue;
-      color: #333;
-    }
+      font-family: var(--montserrat);
+      font-size: var(--button);
+      background-color: var(--blue-01);
+      color: var(--gray-03);
+      border: unset;
+      border-radius: 10px;
+    };
+    /* button:hover {
+      color: var(--gray-02);
+      background-color: var(--blue-03);
+    }; */
   `;
 
   static get properties() {
@@ -21,7 +31,6 @@ export class CardButton extends LitElement {
   constructor() {
     super();
     this.buttonText = 'Click me';
-
   }
 
   render() {
@@ -33,7 +42,7 @@ export class CardButton extends LitElement {
   }
 
   _onClick() {
-    alert("Well done!");
+    alert("You clicked that well!");
   }
 }
 
