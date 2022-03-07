@@ -9,6 +9,7 @@ export class CardButton extends LitElement {
       display: inline-block;
       margin: 1rem 0;
       padding: 0.5rem;
+      text-align: center;
       font-family: var(--montserrat);
       font-size: var(--button);
       background-color: var(--blue-01);

@@ -4,7 +4,7 @@ export class CardContent extends LitElement {
   static styles = css`
       p {
         display: inline-block;
-        margin: 0 -1rem;
+        margin: 0 -1rem 1rem -1rem;
         padding: 1rem;
         width: 100%;
         font-family: var(--montserrat);
