@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build"
   },
   "dependencies": {
